@@ -9,11 +9,13 @@ code styleguide for me
 
 ## view guides
 
-   $ mystyleguide build
-   $ ls -al out
-   -rw-r--r--  1 hyojun  staff  8294  1 12 00:59 coffee.html
-   -rw-r--r--  1 hyojun  staff   598  1 12 00:39 scala.html
-   ...
+```bash
+$ mystyleguide build
+$ ls -al out
+-rw-r--r--  1 hyojun  staff  8294  1 12 00:59 coffee.html
+-rw-r--r--  1 hyojun  staff   598  1 12 00:39 scala.html
+...
+```
 
 ## Contribution
 
