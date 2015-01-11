@@ -2,6 +2,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 """
+from docutils.core import publish_string
 from pathlib import Path
 
 import click
@@ -29,8 +30,9 @@ def build(output):
     except FileExistsError as e:
         pass
     for name, guide in render_styleguides():
-        with open(str(out_path / '{}.rst'.format(name)), 'w') as f:
-            f.write(guide)
+        with open(str(out_path / '{}.html'.format(name)), 'w') as f:
+            html = publish_string(guide, writer_name='html')
+            f.write(html.decode('utf-8'))
 
 
 cli.add_command(hello)

@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 install_requires = [
-    'click == 3.3', 'Jinja2 == 2.7.3',
+    'click == 3.3', 'Jinja2 == 2.7.3', 'docutils == 0.12',
 ]
 
 setup(
