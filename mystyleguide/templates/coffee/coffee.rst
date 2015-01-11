@@ -1,10 +1,11 @@
-{% extends "../meta.rst" %}
+{% extends "meta.rst" %}
+
+{% block language %}coffeescript{% endblock %}
 
 {% block code_layout %}
-
 Indentation
 ***************
-Use 4 spaces per indentation level.
+Use 2 spaces per indentation level.
 
 {% endblock %}
 
