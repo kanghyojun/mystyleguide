@@ -21,9 +21,12 @@ def hello():
     """
     click.echo('Hello :)')
 
+
 @click.command()
 @click.option('--output', default='./out', help='Set output directory')
 def build(output):
+    """Build styleguides.
+    """
     out_path = Path(output)
     try:
         out_path.mkdir(mode=0o777)
