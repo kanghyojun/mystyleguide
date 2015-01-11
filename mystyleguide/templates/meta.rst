@@ -45,4 +45,3 @@ Programming Recommendations
 
 {% block recommend %}
 {% endblock %}
-
